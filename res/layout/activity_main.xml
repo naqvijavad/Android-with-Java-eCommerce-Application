@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D67B4">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="456dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/logo"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="Step up your style game and Find your perfect match with Solemate" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="75dp"
+        android:backgroundTint="#F6F2E7"
+        android:text="Find my SoleMate"
+        android:textColor="#0D67B4"
+        app:cornerRadius="15dp" />
+</RelativeLayout>

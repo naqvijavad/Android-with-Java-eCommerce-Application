@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/detail_image_view"
+        android:layout_width="197dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jordan1" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="-20dp"
+        android:backgroundTint="#3F51B5"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/addQty"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/etQuantity"
+                app:layout_constraintEnd_toEndOf="@+id/tvproductDescr"
+                app:layout_constraintTop_toTopOf="@+id/etQuantity" />
+
+            <Button
+                android:id="@+id/subQty"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="2dp"
+                android:backgroundTint="@color/white"
+                android:paddingBottom="5dp"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/etQuantity"
+                app:layout_constraintEnd_toStartOf="@+id/etQuantity"
+                app:layout_constraintTop_toTopOf="@+id/etQuantity" />
+
+            <EditText
+                android:id="@+id/etQuantity"
+                android:layout_width="79dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="46dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/buy_button"
+                app:layout_constraintEnd_toStartOf="@+id/addQty" />
+
+            <TextView
+                android:id="@+id/detail_name_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="16dp"
+                android:text="NAME"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/detail_brand_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="NAME"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/detail_name_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/detail_name_text_view" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/subQty"
+                app:layout_constraintStart_toStartOf="@+id/tvproductDescr"
+                app:layout_constraintTop_toTopOf="@+id/subQty" />
+
+            <TextView
+                android:id="@+id/detail_price_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="18dp"
+                android:text="PRICE"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_name_text_view" />
+
+            <TextView
+                android:id="@+id/tvproductDescr"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="skhdbkshdfjkshdfjksjdvfhjksfhvskjfnvjsfnvsfnvshfvosfjvsfvnsfv"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/addQty"
+                app:layout_constraintEnd_toEndOf="@+id/detail_price_text_view"
+                app:layout_constraintStart_toStartOf="@+id/detail_name_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/detail_price_text_view" />
+
+            <Button
+                android:id="@+id/buy_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="29dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_add_shopping_cart_24"
+                android:text="ADD TO CART"
+
+                android:textColor="@color/black"
+                app:cornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

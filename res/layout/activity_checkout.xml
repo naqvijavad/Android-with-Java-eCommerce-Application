@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_checkout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/checkout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Checkout"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/first_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingTop="40dp" />
+
+        <EditText
+            android:id="@+id/last_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_name_edit_text"
+            android:layout_marginBottom="20dp"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/last_name_edit_text"
+            android:layout_marginBottom="20dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_edit_text"
+            android:layout_marginBottom="20dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/address_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_edit_text"
+            android:layout_marginBottom="20dp"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:maxLines="3"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/payment_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_edit_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Payment Details"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/card_number_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/payment_details_title"
+            android:layout_marginBottom="20dp"
+            android:hint="Card Number"
+            android:inputType="number"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:minHeight="48dp" />
+
+        <RelativeLayout
+            android:id="@+id/expiry_date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_number_edit_text"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/expiry_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Expiry Date"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/expiry_month_edit_text"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/expiry_date_label"
+                android:hint="MM"
+                android:inputType="number"
+                android:maxLength="2"
+                android:maxLines="1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/slash_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/expiry_month_edit_text"
+                android:text="/"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/expiry_year_edit_text"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/slash_label"
+                android:hint="YY"
+                android:inputType="number"
+                android:maxLength="4"
+                android:maxLines="1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/cvv_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/expiry_date_layout"
+            android:layout_marginBottom="20dp"
+            android:hint="CVV"
+            android:inputType="numberPassword"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/checkout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvv_edit_text"
+            android:layout_marginTop="20dp"
+            android:text="Place Order"
+            android:textSize="20sp"
+            app:cornerRadius="15dp" />
+
+    </RelativeLayout>
+</ScrollView>
