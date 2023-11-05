@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Android E-commerce Application is a project developed by [Your Name] as an Android Developer. The application provides a user-friendly interface for product discovery and offers detailed product information. It is designed to enhance the shopping experience by leveraging Java for coding and creating an efficient checkout system.
+This Android E-commerce Application is a project developed by Javad Naqvi as an Android Developer. The application provides a user-friendly interface for product discovery and offers detailed product information. It is designed to enhance the shopping experience by leveraging Java for coding and creating an efficient checkout system.
 
 ## Features
 
@@ -21,7 +21,7 @@ To get a local copy of the project up and running, follow these steps:
 - Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/android-ecommerce-app.git
+   git clone https://github.com/naqvijavad/Android-with-Java-eCommerce-Application.git
 - Open the project in your preferred Android development environment.
 - Build and run the application on an Android emulator or physical device.
 
